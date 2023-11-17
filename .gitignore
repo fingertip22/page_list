@@ -1,0 +1,8 @@
+# common
+.git
+.DS_Store
+Thumbs.db
+node_modules
+*.map
+.vscode
+file-list.html

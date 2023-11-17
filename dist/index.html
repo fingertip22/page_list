@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>制作ページリスト</title>
+<style>:root{--color-blue:#0076a8;--color-white:#fff;--color-black:#000;--fz-base:1pc}body,main{display:flex;width:100%;margin:0}article{display:flex;flex-direction:column;width:50vw;height:100%}h1{margin:1em 24px}ul{position:relative;padding:0}ul:after{content:"ページタイトルにカーソルを合わせると、\Aこのエリアにプレビューが表示されます。";display:flex;align-items:center;justify-content:center;position:fixed;top:0;right:0;width:50%;height:100%;background-color:var(--color-black);color:var(--color-white);font-size:calc(var(--fz-base)* 1.5);white-space:pre}li{list-style:none}li+li{border-top:1px solid var(--color-black)}a{display:block;padding:1pc 24px;color:var(--color-blue);text-decoration:none}a[target="_blank"] .link__in{position:relative}a[target="_blank"] .link__in:after,a[target="_blank"] .link__in:before{content:"";position:absolute;width:8px;height:8px;border:1px solid}a[target="_blank"] .link__in:before{right:-1pc;bottom:4px}a[target="_blank"] .link__in:after{right:-20px;bottom:0}a:hover{background-color:var(--color-blue);color:var(--color-white)}a:hover .date{background-color:var(--color-white);color:var(--color-blue)}a:hover .preview{display:block}.date{display:inline-block;margin-bottom:4px;padding:2px 4px;background-color:var(--color-blue);color:var(--color-white);font-size:9pt}.preview{display:none;position:fixed;z-index:1;top:0;right:0;width:50%;height:100%}.preview iframe{width:200%;height:200%;transform:scale(.5);transform-origin:0 0;background-color:#fff}.no-preview article{width:100%}.no-preview h1{display:none}.no-preview ul:after{content:none}.no-preview a:hover .preview{display:none}@media(max-width:767.98px){article{width:100%}ul:after{content:none}}</style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>制作ページリスト</h1>
+      <section>
+        <ul><!-- file list --></ul>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
