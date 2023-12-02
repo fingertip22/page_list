@@ -31,7 +31,7 @@ const listHtml = `
   }).join('\n')}
 `;
 
-staticFileFlag ? staticFileCreate() : '';
+staticFileFlag || process.env.NODE_ENV ? staticFileCreate() : '';
 function staticFileCreate() {
   const stream = fs.createWriteStream(staticFileName);
 
@@ -66,7 +66,7 @@ function staticFileCreate() {
  */
 
 module.exports = {
-    "files": ['./dist/**/*.{html,css,js,webp,jpg,png,svg}'],
+    "files": [dirPath + '/**/*.{html,css,js,webp,jpg,png,svg}'],
     "watchEvents": [
         "change", "add"
     ],

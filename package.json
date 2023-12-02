@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel server",
     "server": "browser-sync start --config bs-config.js",
-    "pageList": "node page-list.js"
+    "pageList": "NODE_ENV=true node bs-config.js "
   },
   "keywords": [],
   "author": "",
